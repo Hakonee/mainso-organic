@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  /* Cores Oficiais - Manual pág. 4 */
+  --color-organic-green: #8FAE7A;
+  --color-organic-dark-green: #5F6F52;
+  --color-organic-off-white: #F4F2EC;
+  --color-organic-earth: #7A5C3E;
+
+  /* Fontes Oficiais - Manual pág. 5 */
+  --font-display: "Black Mango", serif;
+  --font-sans: "Poppins", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Definindo as variáveis padrão com as cores da marca */
+  --background: #F4F2EC; /* Off-white do manual */
+  --foreground: #5F6F52; /* Verde escuro do manual */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Remove o modo escuro automático para manter a identidade da marca */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F4F2EC;
+    --foreground: #5F6F52;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
 }
