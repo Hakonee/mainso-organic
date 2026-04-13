@@ -52,54 +52,81 @@ export default function ProdutosPage() {
       `}</style>
 
       <div className="max-w-7xl mx-auto">
-        
+
         {/* HEADER - Cores: Verde Escuro #5F6F52 e Verde Claro #8FAE7A (Manual, pág. 4) */}
-        <header className="mb-20 text-center space-y-4 animate-cascade" style={{ animationDelay: '0.1s' }}>
-          <span className="text-[#8FAE7A] uppercase tracking-[0.3em] text-sm font-bold">Coleção Autoral</span>
-          <h1 className="font-serif text-6xl md:text-7xl text-[#5F6F52]">Catálogo Consciente</h1>
-          <p className="text-[#7A5C3E] max-w-2xl mx-auto text-lg italic font-medium">
-            "Onde moda encontra propósito." 
-            <span className="block text-[10px] not-italic opacity-60 uppercase mt-1"></span>
-          </p>
-          <div className="w-24 h-1 bg-[#8FAE7A] mx-auto mt-6"></div>
+        <header className="mb-32 text-center space-y-10 animate-cascade relative" style={{ animationDelay: '0.1s' }}>
+          {/* Elementos decorativos de fundo */}
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute top-10 left-1/4 w-32 h-32 rounded-full bg-[#8FAE7A]/5 blur-2xl" />
+            <div className="absolute bottom-10 right-1/4 w-40 h-40 rounded-full bg-[#5F6F52]/5 blur-2xl" />
+          </div>
+
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-3 bg-[#8FAE7A]/10 px-6 py-3 rounded-full border border-[#8FAE7A]/20">
+              <div className="w-2 h-2 rounded-full bg-[#8FAE7A] animate-pulse" />
+              <span className="text-[#5F6F52] text-sm font-medium uppercase tracking-wide">
+                Coleção Autoral
+              </span>
+            </div>
+
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[#5F6F52] leading-tight">
+              Catálogo <br />
+              <span className="text-[#8FAE7A]">Consciente</span>
+            </h1>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              <p className="text-[#7A5C3E] text-xl md:text-2xl font-medium leading-relaxed">
+                "Onde moda encontra propósito."
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Descubra nossa coleção de produtos sustentáveis, criados com materiais orgânicos e processos responsáveis.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center gap-4">
+            <div className="w-16 h-[1px] bg-[#8FAE7A]" />
+            <div className="w-3 h-3 rounded-full bg-[#8FAE7A]" />
+            <div className="w-16 h-[1px] bg-[#8FAE7A]" />
+          </div>
         </header>
 
         {/* GRID DE PRODUTOS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-32">
           {catalogo.map((item, index) => (
-            <div 
-              key={item.id} 
-              className="animate-cascade group bg-white rounded-[2.5rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 border border-[#5F6F52]/5 flex flex-col"
+            <div
+              key={item.id}
+              className="animate-cascade group bg-gradient-to-br from-white to-[#F4F2EC] rounded-[2.5rem] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5F6F52]/5 flex flex-col hover:-translate-y-1"
               style={{ animationDelay: `${(index + 2) * 0.15}s` }}
             >
               {/* Container da Imagem */}
-              <div className="relative aspect-square bg-[#F4F2EC] rounded-[2rem] mb-6 overflow-hidden flex items-center justify-center">
-                <span className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md text-[#5F6F52] text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+              <div className="relative aspect-square bg-gradient-to-br from-[#F4F2EC] to-white rounded-[2rem] mb-8 overflow-hidden flex items-center justify-center shadow-inner">
+                <span className="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur-md text-[#5F6F52] text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-lg border border-[#8FAE7A]/20">
                   {item.tag}
                 </span>
-                <Image 
-                  src={item.img} 
+                <Image
+                  src={item.img}
                   alt={item.nome}
                   fill
-                  className="object-contain p-8 transform group-hover:scale-110 transition-transform duration-500"
-                  sizes="(max-w-768px) 100vw, 25vw"
+                  className="object-contain p-8 transform group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
 
               {/* Informações - Tipografia Poppins (Manual, pág. 5) */}
-              <div className="flex-grow space-y-2">
-                <h3 className="font-serif text-2xl text-[#5F6F52] group-hover:text-[#8FAE7A] transition-colors">
+              <div className="flex-grow space-y-4">
+                <h3 className="font-serif text-2xl md:text-3xl text-[#5F6F52] font-bold leading-tight">
                   {item.nome}
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-base">
                   {item.desc}
                 </p>
               </div>
 
               {/* Preço e Ação - Cor Marrom Terra #7A5C3E (Manual, pág. 4) */}
-              <div className="mt-6 pt-6 border-t border-[#F4F2EC] flex justify-between items-center">
-                <span className="font-bold text-[#7A5C3E] text-xl">{item.preco}</span>
-                <button className="bg-[#5F6F52] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#8FAE7A] transition-all shadow-lg active:scale-90">
+              <div className="mt-8 pt-8 border-t border-[#F4F2EC] flex justify-between items-center">
+                <span className="font-bold text-[#7A5C3E] text-2xl">{item.preco}</span>
+                <button className="bg-gradient-to-r from-[#5F6F52] to-[#8FAE7A] text-white w-14 h-14 rounded-full flex items-center justify-center hover:shadow-xl hover:shadow-[#8FAE7A]/25 transition-all duration-300 active:scale-90">
                   <span className="text-2xl font-light">+</span>
                 </button>
               </div>
@@ -108,28 +135,51 @@ export default function ProdutosPage() {
         </div>
 
         {/* SEÇÃO LINO - Baseada na pág. 9 da Apresentação */}
-        <div 
-          className="animate-cascade mt-32 relative overflow-hidden rounded-[4rem] bg-[#5F6F52] p-12 md:p-20 text-white"
+        <div
+          className="animate-cascade mt-32 relative overflow-hidden rounded-[4rem] bg-gradient-to-br from-[#5F6F52] via-[#7A9B6A] to-[#8FAE7A] p-12 md:p-20 text-white shadow-2xl"
           style={{ animationDelay: '1s' }}
         >
+          {/* Elementos decorativos */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#F4F2EC]/10 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/3 rounded-full blur-3xl" />
+          </div>
+
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
-            <div className="w-56 h-56 bg-[#F4F2EC] rounded-full flex items-center justify-center shadow-2xl shrink-0 overflow-hidden border-8 border-[#8FAE7A]/20">
-               <span className="text-8xl">🦥</span>
+            <div className="w-56 h-56 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl shrink-0 overflow-hidden border-8 border-white/20 hover:scale-105 transition-transform duration-500">
+               <span className="text-8xl animate-pulse">🦥</span>
             </div>
-            
-            <div className="space-y-6">
-              <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-                Lino: O Ritmo da Natureza
-              </h2>
-              <p className="text-white/80 text-lg leading-relaxed max-w-3xl">
-                Nosso mascote Lino representa os valores de calma e consciência. Ele simboliza o movimento <em>slow fashion</em>, com roupas feitas para durar e respeito ao tempo da natureza.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-4">
-                {["Sustentável", "Ético", "Consciente"].map((tag) => (
-                  <span key={tag} className="border border-[#8FAE7A]/50 text-[#8FAE7A] px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest bg-white/5">
+
+            <div className="space-y-8 animate-fade-in">
+              <div className="space-y-6">
+                <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-white">
+                  Lino: O Ritmo da Natureza
+                </h2>
+                <p className="text-white/90 text-xl leading-relaxed max-w-3xl">
+                  Nosso mascote Lino representa os valores de calma e consciência. Ele simboliza o movimento <em>slow fashion</em>, com roupas feitas para durar e respeito ao tempo da natureza.
+                </p>
+              </div>
+
+              {/* Tags com efeito glassmorphism */}
+              <div className="flex flex-wrap gap-4 pt-6">
+                {["Sustentável", "Ético", "Consciente"].map((tag, index) => (
+                  <span
+                    key={tag}
+                    className="animate-cascade backdrop-blur-md bg-white/10 border border-white/20 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest shadow-lg hover:bg-white/20 transition-all duration-300"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
                     {tag}
                   </span>
                 ))}
+              </div>
+
+              {/* CTA */}
+              <div className="pt-8">
+                <button className="group/btn relative bg-white text-[#5F6F52] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F4F2EC] hover:shadow-2xl hover:shadow-white/25 transition-all duration-500 active:scale-95 flex items-center gap-3 overflow-hidden">
+                  <span className="relative z-10">Conheça Nossa História</span>
+                  <span className="text-2xl group-hover/btn:translate-x-1 transition-transform duration-300 relative z-10">→</span>
+                </button>
               </div>
             </div>
           </div>
