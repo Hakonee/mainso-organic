@@ -29,6 +29,23 @@ export default function VLibras() {
       vlibrasRoot.appendChild(accessButton);
       vlibrasRoot.appendChild(pluginWrapper);
       document.body.appendChild(vlibrasRoot);
+
+      // Adicionar estilos para mobile
+      const style = document.createElement('style');
+      style.textContent = `
+        @media (max-width: 768px) {
+          [vw-access-button] {
+            width: 60px !important;
+            height: 60px !important;
+            bottom: 20px !important;
+            right: 20px !important;
+          }
+          [vw-plugin-wrapper] {
+            bottom: 90px !important;
+          }
+        }
+      `;
+      document.head.appendChild(style);
     }
 
     const tryInitVLibras = () => {

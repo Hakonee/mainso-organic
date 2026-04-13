@@ -122,7 +122,7 @@ export default function ContatoPage() {
                 ></textarea>
               </div>
 
-              <button className="w-full bg-[#5F6F52] hover:bg-[#7A5C3E] text-white font-bold py-6 rounded-2xl transition-all shadow-lg uppercase tracking-[0.2em] text-xs mt-4 active:scale-95">
+              <button className="w-full bg-[#5F6F52] hover:bg-[#7A5C3E] focus:bg-[#7A5C3E] text-white font-bold py-6 rounded-2xl transition-all shadow-lg uppercase tracking-[0.2em] text-xs mt-4 active:scale-95">
                 Enviar para a Maison
               </button>
             </form>

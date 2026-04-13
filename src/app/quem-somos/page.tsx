@@ -445,12 +445,12 @@ export default function QuemSomos() {
 
           {/* Call-to-action aprimorado */}
           <div className="pt-8">
-            <Link href="/contato" className="group relative inline-flex items-center justify-center gap-4 px-12 py-6 bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] text-[#5F6F52] font-bold uppercase tracking-[0.15em] text-lg rounded-full shadow-2xl transition-all duration-500 hover:shadow-[#8FAE7A]/25 hover:scale-110 hover:-translate-y-1">
+            <Link href="/contato" className="group relative inline-flex items-center justify-center gap-4 px-12 py-6 bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] text-[#5F6F52] font-bold uppercase tracking-[0.15em] text-lg rounded-full shadow-2xl transition-all duration-500 hover:shadow-[#8FAE7A]/25 focus:shadow-[#8FAE7A]/25 hover:scale-110 focus:scale-110 hover:-translate-y-1 focus:-translate-y-1">
               <span className="relative z-10">Junte-se ao Movimento</span>
-              <svg className="w-6 h-6 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 relative z-10 group-hover:translate-x-1 group-focus:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#7A9B6A] to-[#8FAE7A] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#7A9B6A] to-[#8FAE7A] opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 rounded-full" />
             </Link>
           </div>
         </div>

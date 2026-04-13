@@ -176,9 +176,9 @@ export default function ProdutosPage() {
 
               {/* CTA */}
               <div className="pt-8">
-                <button className="group/btn relative bg-white text-[#5F6F52] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F4F2EC] hover:shadow-2xl hover:shadow-white/25 transition-all duration-500 active:scale-95 flex items-center gap-3 overflow-hidden">
+                <button className="group/btn relative bg-white text-[#5F6F52] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F4F2EC] focus:bg-[#F4F2EC] hover:shadow-2xl focus:shadow-2xl hover:shadow-white/25 focus:shadow-white/25 transition-all duration-500 active:scale-95 flex items-center gap-3 overflow-hidden">
                   <span className="relative z-10">Conheça Nossa História</span>
-                  <span className="text-2xl group-hover/btn:translate-x-1 transition-transform duration-300 relative z-10">→</span>
+                  <span className="text-2xl group-hover/btn:translate-x-1 group-focus/btn:translate-x-1 transition-transform duration-300 relative z-10">→</span>
                 </button>
               </div>
             </div>

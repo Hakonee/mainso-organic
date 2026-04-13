@@ -78,11 +78,11 @@ export default function Home() {
 
           {/* Call-to-action buttons */}
           <div className="animate-cascade flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-12 md:mb-16" style={{ animationDelay: '1s' }}>
-            <Link href="/produtos" className="group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#8FAE7A] text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-2xl transition-all duration-300 hover:bg-white hover:text-[#5F6F52] hover:shadow-[#8FAE7A]/25 hover:scale-105">
+            <Link href="/produtos" className="group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#8FAE7A] text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-2xl transition-all duration-300 hover:bg-white hover:text-[#5F6F52] focus:bg-white focus:text-[#5F6F52] hover:shadow-[#8FAE7A]/25 focus:shadow-[#8FAE7A]/25 hover:scale-105 focus:scale-105">
               <span className="relative z-10">Conheça a coleção</span>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300" />
             </Link>
-            <Link href="/quem-somos" className="group inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-xl transition-all duration-300 hover:border-[#8FAE7A] hover:bg-[#8FAE7A]/10 hover:shadow-[#8FAE7A]/10">
+            <Link href="/quem-somos" className="group inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-xl transition-all duration-300 hover:border-[#8FAE7A] hover:bg-[#8FAE7A]/10 focus:border-[#8FAE7A] focus:bg-[#8FAE7A]/10 hover:shadow-[#8FAE7A]/10 focus:shadow-[#8FAE7A]/10">
               Nossa história
             </Link>
           </div>
@@ -402,12 +402,12 @@ export default function Home() {
           {/* Call-to-action aprimorado */}
           <div className="space-y-12">
             <Link href="/produtos"
-              className="group relative inline-flex items-center justify-center gap-4 px-12 py-6 bg-gradient-to-r from-[#5F6F52] to-[#8FAE7A] text-white font-bold uppercase tracking-[0.15em] text-lg rounded-full shadow-2xl transition-all duration-500 hover:shadow-[#8FAE7A]/25 hover:scale-110 hover:-translate-y-1">
+              className="group relative inline-flex items-center justify-center gap-4 px-12 py-6 bg-gradient-to-r from-[#5F6F52] to-[#8FAE7A] text-white font-bold uppercase tracking-[0.15em] text-lg rounded-full shadow-2xl transition-all duration-500 hover:shadow-[#8FAE7A]/25 focus:shadow-[#8FAE7A]/25 hover:scale-110 focus:scale-110 hover:-translate-y-1 focus:-translate-y-1">
               <span className="relative z-10">Explorar Loja</span>
-              <svg className="w-6 h-6 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 relative z-10 group-hover:translate-x-1 group-focus:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 rounded-full" />
             </Link>
 
             {/* Links de navegação */}
