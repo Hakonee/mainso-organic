@@ -11,7 +11,7 @@ export default function Header() {
       {/* Elementos decorativos sutis */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(143,174,122,0.03),transparent_50%)] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6 flex justify-between items-center relative z-10">
 
         {/* Logo Principal */}
         <Link href="/" className="flex items-center gap-3 group">

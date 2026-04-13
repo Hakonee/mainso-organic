@@ -44,7 +44,7 @@ export default function QuemSomos() {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif leading-tight text-[#5F6F52]">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-[#5F6F52]">
                 Sobre <br />
                 <span className="text-[#8FAE7A]">Nós</span>
               </h1>

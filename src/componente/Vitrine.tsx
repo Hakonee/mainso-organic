@@ -33,7 +33,7 @@ const produtos = [
 
 export default function Vitrine() {
   return (
-    <section className="bg-organic-off-white py-16 px-6">
+    <section className="bg-organic-off-white py-12 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Cabeçalho da Vitrine - Baseado na pág. 19 */}
         <div className="text-center mb-12">

@@ -66,13 +66,13 @@ export default function Home() {
           </div>
 
           {/* Título principal */}
-          <h1 className="animate-cascade font-serif text-white text-3xl md:text-5xl lg:text-7xl xl:text-8xl leading-tight mb-6 md:mb-8" style={{ animationDelay: '0.6s' }}>
+          <h1 className="animate-cascade font-serif text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-6 md:mb-8" style={{ animationDelay: '0.6s' }}>
             Vista o mundo que você <br className="hidden md:block" />
             <span className="text-[#8FAE7A]">quer preservar</span>
           </h1>
 
           {/* Subtítulo */}
-          <p className="animate-cascade max-w-2xl mx-auto text-white/70 text-base md:text-lg lg:text-xl leading-relaxed mb-8 md:mb-12" style={{ animationDelay: '0.8s' }}>
+          <p className="animate-cascade max-w-xl sm:max-w-2xl mx-auto text-white/70 text-sm sm:text-base md:text-lg leading-relaxed mb-8 md:mb-12" style={{ animationDelay: '0.8s' }}>
             Maison Organic cria peças sustentáveis com sensibilidade e estilo, usando materiais orgânicos, processos limpos e design pensado para durar.
           </p>
 
@@ -89,11 +89,11 @@ export default function Home() {
 
           {/* Cards de destaque */}
           <div className="animate-cascade grid gap-4 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto" style={{ animationDelay: '1.2s' }}>
-            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl md:rounded-3xl p-6 md:p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-3 md:mb-5 group-hover:bg-[#8FAE7A]/30 transition-colors">
                 <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#8FAE7A]" />
               </div>
-              <h3 className="text-white font-semibold text-base md:text-lg mb-2 md:mb-3">Algodão Orgânico</h3>
+              <h3 className="text-white font-semibold text-sm md:text-base mb-2 md:mb-3">Algodão Orgânico</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Tecidos naturais, conforto e menos impacto ambiental.
               </p>
@@ -368,8 +368,8 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white to-[#F4F2EC] p-8 border border-[#E9E6DC] shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-[#8FAE7A]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
-                <div className="text-5xl md:text-6xl font-bold text-[#5F6F52] mb-4 group-hover:text-[#8FAE7A] transition-colors">100%</div>
-                <div className="text-lg text-[#7A5C3E] font-medium mb-2">Materiais Orgânicos</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#5F6F52] mb-4 group-hover:text-[#8FAE7A] transition-colors">100%</div>
+                <div className="text-base md:text-lg text-[#7A5C3E] font-medium mb-2">Materiais Orgânicos</div>
                 <div className="w-full h-1 bg-[#8FAE7A]/20 rounded-full overflow-hidden">
                   <div className="h-full bg-[#8FAE7A] rounded-full animate-pulse" style={{ width: '100%' }} />
                 </div>

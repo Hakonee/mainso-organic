@@ -26,10 +26,10 @@ export default function ContatoPage() {
       <div className="max-w-6xl mx-auto">
         
         {/* CABEÇALHO - Animação Inicial (Apresentação, pág. 19) */}
-        <div className="text-center mb-20 space-y-4 animate-cascade" style={{ animationDelay: '0.1s' }}>
-          <span className="text-[#8FAE7A] uppercase tracking-[0.4em] text-xs font-bold">Get in Touch</span>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl text-[#5F6F52]">Fale conosco</h1>
-          <p className="text-[#7A5C3E] text-lg md:text-xl italic font-medium">
+<div className="text-center mb-16 md:mb-20 space-y-4 animate-cascade" style={{ animationDelay: '0.1s' }}>
+          <span className="text-[#8FAE7A] uppercase tracking-[0.4em] text-[10px] sm:text-xs font-bold">Get in Touch</span>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#5F6F52]">Fale conosco</h1>
+          <p className="text-[#7A5C3E] text-base md:text-lg italic font-medium">
             "Onde moda encontra propósito." 
           </p>
         </div>

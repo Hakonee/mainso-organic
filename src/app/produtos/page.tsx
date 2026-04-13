@@ -69,16 +69,16 @@ export default function ProdutosPage() {
               </span>
             </div>
 
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl xl:text-9xl text-[#5F6F52] leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-[#5F6F52] leading-tight">
               Catálogo <br />
               <span className="text-[#8FAE7A]">Consciente</span>
             </h1>
 
-            <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
-              <p className="text-[#7A5C3E] text-lg md:text-xl lg:text-2xl font-medium leading-relaxed">
+            <div className="max-w-xl sm:max-w-2xl mx-auto space-y-4">
+              <p className="text-[#7A5C3E] text-base sm:text-lg md:text-xl font-medium leading-relaxed">
                 "Onde moda encontra propósito."
               </p>
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                 Descubra nossa coleção de produtos sustentáveis, criados com materiais orgânicos e processos responsáveis.
               </p>
             </div>
@@ -146,9 +146,9 @@ export default function ProdutosPage() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/3 rounded-full blur-3xl" />
           </div>
 
-          <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
-            <div className="w-56 h-56 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl shrink-0 overflow-hidden border-8 border-white/20 hover:scale-105 transition-transform duration-500">
-               <span className="text-8xl animate-pulse">🦥</span>
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl shrink-0 overflow-hidden border-6 md:border-8 border-white/20 hover:scale-105 transition-transform duration-500">
+               <span className="text-6xl sm:text-7xl md:text-8xl animate-pulse">🦥</span>
             </div>
 
             <div className="space-y-8 animate-fade-in">
