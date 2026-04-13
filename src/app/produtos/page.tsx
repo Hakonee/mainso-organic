@@ -32,7 +32,7 @@ const catalogo = [
 
 export default function ProdutosPage() {
   return (
-    <main className="min-h-screen bg-[#F4F2EC] py-24 px-6 font-sans text-[#5F6F52]">
+    <main className="min-h-screen bg-[#F4F2EC] py-16 md:py-24 px-4 md:px-6 font-sans text-[#5F6F52]">
       {/* Estilos de animação em cascata */}
       <style jsx global>{`
         @keyframes fadeInUp {
@@ -69,16 +69,16 @@ export default function ProdutosPage() {
               </span>
             </div>
 
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[#5F6F52] leading-tight">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl xl:text-9xl text-[#5F6F52] leading-tight">
               Catálogo <br />
               <span className="text-[#8FAE7A]">Consciente</span>
             </h1>
 
-            <div className="max-w-4xl mx-auto space-y-6">
-              <p className="text-[#7A5C3E] text-xl md:text-2xl font-medium leading-relaxed">
+            <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
+              <p className="text-[#7A5C3E] text-lg md:text-xl lg:text-2xl font-medium leading-relaxed">
                 "Onde moda encontra propósito."
               </p>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 Descubra nossa coleção de produtos sustentáveis, criados com materiais orgânicos e processos responsáveis.
               </p>
             </div>
@@ -136,7 +136,7 @@ export default function ProdutosPage() {
 
         {/* SEÇÃO LINO - Baseada na pág. 9 da Apresentação */}
         <div
-          className="animate-cascade mt-32 relative overflow-hidden rounded-[4rem] bg-gradient-to-br from-[#5F6F52] via-[#7A9B6A] to-[#8FAE7A] p-12 md:p-20 text-white shadow-2xl"
+          className="animate-cascade mt-16 md:mt-32 relative overflow-hidden rounded-[2rem] md:rounded-[4rem] bg-gradient-to-br from-[#5F6F52] via-[#7A9B6A] to-[#8FAE7A] p-8 md:p-12 lg:p-20 text-white shadow-2xl"
           style={{ animationDelay: '1s' }}
         >
           {/* Elementos decorativos */}

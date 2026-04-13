@@ -37,9 +37,9 @@ export default function Home() {
         {/* Padrão sutil de fundo */}
         <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.3)_1px,transparent_0)] bg-[length:50px_50px]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 text-center">
           {/* Badge de identificação */}
-          <div className="animate-cascade inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-md px-6 py-3 mb-8 border border-white/20 shadow-2xl" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-cascade inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-md px-4 py-2 mb-6 md:mb-8 border border-white/20 shadow-2xl" style={{ animationDelay: '0.2s' }}>
             <div className="w-2 h-2 rounded-full bg-[#8FAE7A] animate-pulse" />
             <span className="text-sm uppercase tracking-[0.2em] text-white/90 font-medium">
               Consciência em cada detalhe
@@ -47,11 +47,11 @@ export default function Home() {
           </div>
 
           {/* Logo principal */}
-          <div className="animate-cascade mb-12" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-cascade mb-8 md:mb-12" style={{ animationDelay: '0.4s' }}>
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-[#8FAE7A]/20 to-transparent blur-2xl rounded-3xl" />
-              <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl">
-                <div className="w-48 h-24 md:w-64 md:h-32 mx-auto">
+              <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl p-6 md:p-8 border border-white/10 shadow-2xl">
+                <div className="w-32 h-16 md:w-48 md:h-24 lg:w-64 lg:h-32 mx-auto">
                   <Image
                     src="/logo-maison.png"
                     alt="Maison Organic Logo"
@@ -66,54 +66,54 @@ export default function Home() {
           </div>
 
           {/* Título principal */}
-          <h1 className="animate-cascade font-serif text-white text-4xl md:text-7xl lg:text-8xl leading-tight mb-8" style={{ animationDelay: '0.6s' }}>
+          <h1 className="animate-cascade font-serif text-white text-3xl md:text-5xl lg:text-7xl xl:text-8xl leading-tight mb-6 md:mb-8" style={{ animationDelay: '0.6s' }}>
             Vista o mundo que você <br className="hidden md:block" />
             <span className="text-[#8FAE7A]">quer preservar</span>
           </h1>
 
           {/* Subtítulo */}
-          <p className="animate-cascade max-w-2xl mx-auto text-white/70 text-lg md:text-xl leading-relaxed mb-12" style={{ animationDelay: '0.8s' }}>
+          <p className="animate-cascade max-w-2xl mx-auto text-white/70 text-base md:text-lg lg:text-xl leading-relaxed mb-8 md:mb-12" style={{ animationDelay: '0.8s' }}>
             Maison Organic cria peças sustentáveis com sensibilidade e estilo, usando materiais orgânicos, processos limpos e design pensado para durar.
           </p>
 
           {/* Call-to-action buttons */}
-          <div className="animate-cascade flex flex-col sm:flex-row justify-center items-center gap-6 mb-16" style={{ animationDelay: '1s' }}>
-            <Link href="/produtos" className="group relative inline-flex items-center justify-center px-10 py-5 bg-[#8FAE7A] text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-2xl transition-all duration-300 hover:bg-white hover:text-[#5F6F52] hover:shadow-[#8FAE7A]/25 hover:scale-105">
+          <div className="animate-cascade flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-12 md:mb-16" style={{ animationDelay: '1s' }}>
+            <Link href="/produtos" className="group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#8FAE7A] text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-2xl transition-all duration-300 hover:bg-white hover:text-[#5F6F52] hover:shadow-[#8FAE7A]/25 hover:scale-105">
               <span className="relative z-10">Conheça a coleção</span>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8FAE7A] to-[#7A9B6A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
-            <Link href="/quem-somos" className="group inline-flex items-center justify-center px-10 py-5 border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-xl transition-all duration-300 hover:border-[#8FAE7A] hover:bg-[#8FAE7A]/10 hover:shadow-[#8FAE7A]/10">
+            <Link href="/quem-somos" className="group inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white font-semibold uppercase tracking-[0.15em] text-sm rounded-full shadow-xl transition-all duration-300 hover:border-[#8FAE7A] hover:bg-[#8FAE7A]/10 hover:shadow-[#8FAE7A]/10">
               Nossa história
             </Link>
           </div>
 
           {/* Cards de destaque */}
-          <div className="animate-cascade grid gap-6 md:grid-cols-3 max-w-5xl mx-auto" style={{ animationDelay: '1.2s' }}>
-            <div className="group bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
-              <div className="w-12 h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
-                <div className="w-6 h-6 rounded-full bg-[#8FAE7A]" />
+          <div className="animate-cascade grid gap-4 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto" style={{ animationDelay: '1.2s' }}>
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl md:rounded-3xl p-6 md:p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
+                <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#8FAE7A]" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Algodão Orgânico</h3>
+              <h3 className="text-white font-semibold text-base md:text-lg mb-2 md:mb-3">Algodão Orgânico</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Tecidos naturais, conforto e menos impacto ambiental.
               </p>
             </div>
 
-            <div className="group bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
-              <div className="w-12 h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
-                <div className="w-6 h-6 rounded-full bg-[#8FAE7A]" />
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl md:rounded-3xl p-6 md:p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
+                <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#8FAE7A]" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Produção Local</h3>
+              <h3 className="text-white font-semibold text-base md:text-lg mb-2 md:mb-3">Produção Local</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Valorização de comunidades e processos responsáveis.
               </p>
             </div>
 
-            <div className="group bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
-              <div className="w-12 h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
-                <div className="w-6 h-6 rounded-full bg-[#8FAE7A]" />
+            <div className="group bg-white/5 backdrop-blur-lg rounded-2xl md:rounded-3xl p-6 md:p-8 border border-white/10 shadow-xl transition-all duration-300 hover:bg-white/10 hover:border-[#8FAE7A]/50 hover:scale-105">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-[#8FAE7A]/20 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#8FAE7A]/30 transition-colors">
+                <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#8FAE7A]" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Design Atemporal</h3>
+              <h3 className="text-white font-semibold text-base md:text-lg mb-2 md:mb-3">Design Atemporal</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Peças que atravessam temporadas com elegância e consciência.
               </p>
@@ -130,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO MANIFESTO: O LINO (Apresentação, pág. 9) */}
-      <section className="py-32 px-6 bg-gradient-to-br from-[#F4F2EC] via-white to-[#F4F2EC] relative overflow-hidden">
+      <section className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-br from-[#F4F2EC] via-white to-[#F4F2EC] relative overflow-hidden">
         {/* Elementos decorativos sutis */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#8FAE7A]/5 blur-2xl" />
@@ -138,7 +138,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#8FAE7A]/3 blur-3xl" />
         </div>
 
-        <div className="max-w-7xl mx-auto grid gap-20 lg:grid-cols-2 items-center relative z-10">
+        <div className="max-w-7xl mx-auto grid gap-8 md:gap-20 lg:grid-cols-2 items-center relative z-10">
           <div className="relative animate-cascade" style={{ animationDelay: '0.3s' }}>
             {/* Badge flutuante */}
             <div className="absolute -top-8 -left-8 z-20 animate-bounce">
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO PILARES: MISSÃO, VISÃO E VALORES (Apresentação, pág. 6) */}
-      <section className="bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] py-32 px-6 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] py-16 md:py-32 px-4 md:px-6 relative overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/5 to-transparent" />
@@ -336,7 +336,7 @@ export default function Home() {
       </section>
 
       {/* RODAPÉ DE CHAMADA */}
-      <section className="py-32 px-6 bg-gradient-to-br from-[#F4F2EC] via-[#E9E6DC] to-[#F4F2EC] text-center relative overflow-hidden">
+      <section className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-br from-[#F4F2EC] via-[#E9E6DC] to-[#F4F2EC] text-center relative overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/20 to-transparent" />

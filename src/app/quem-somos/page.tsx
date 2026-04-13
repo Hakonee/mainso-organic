@@ -26,7 +26,7 @@ export default function QuemSomos() {
       `}</style>
 
       {/* HERO - ESSÊNCIA */}
-      <section className="relative py-32 px-6 min-h-screen flex items-center bg-gradient-to-br from-[#F4F2EC] via-white to-[#F4F2EC] overflow-hidden">
+      <section className="relative py-16 md:py-32 px-4 md:px-6 min-h-screen flex items-center bg-gradient-to-br from-[#F4F2EC] via-white to-[#F4F2EC] overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#8FAE7A]/5 blur-2xl" />
@@ -44,7 +44,7 @@ export default function QuemSomos() {
                 </span>
               </div>
 
-              <h1 className="text-6xl md:text-8xl font-serif leading-tight text-[#5F6F52]">
+              <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif leading-tight text-[#5F6F52]">
                 Sobre <br />
                 <span className="text-[#8FAE7A]">Nós</span>
               </h1>
@@ -103,7 +103,7 @@ export default function QuemSomos() {
       </section>
 
       {/* TIMELINE - NOSSA JORNADA (Apresentação, pág. 4) */}
-      <section className="bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] text-[#F4F2EC] py-32 px-6 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] text-[#F4F2EC] py-16 md:py-32 px-4 md:px-6 relative overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/5 to-transparent" />
@@ -120,7 +120,7 @@ export default function QuemSomos() {
                 Nossa Jornada
               </span>
             </div>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-tight mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-serif leading-tight mb-6">
               Nossa <br />
               <span className="text-[#8FAE7A]">História</span>
             </h2>
@@ -184,7 +184,7 @@ export default function QuemSomos() {
       </section>
 
       {/* PILARES E LINO (Apresentação, pág. 9) */}
-      <section className="py-32 px-6 bg-gradient-to-br from-white via-[#F4F2EC] to-white relative overflow-hidden">
+      <section className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-br from-white via-[#F4F2EC] to-white relative overflow-hidden">
         {/* Elementos decorativos sutis */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#8FAE7A]/5 blur-2xl" />
@@ -203,7 +203,7 @@ export default function QuemSomos() {
                   </span>
                 </div>
 
-                <h2 className="font-serif text-[#5F6F52] text-5xl md:text-7xl leading-tight">
+                <h2 className="font-serif text-[#5F6F52] text-3xl md:text-5xl lg:text-7xl leading-tight">
                   Lino: O Coração da <br />
                   <span className="text-[#8FAE7A]">Nossa Criação</span>
                 </h2>
@@ -294,7 +294,7 @@ export default function QuemSomos() {
       </section>
 
       {/* ESTRUTURA ORGANIZACIONAL (Apresentação, págs. 11-16) */}
-      <section className="py-32 px-6 bg-gradient-to-br from-[#F4F2EC] via-[#E9E6DC] to-[#F4F2EC] relative overflow-hidden">
+      <section className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-br from-[#F4F2EC] via-[#E9E6DC] to-[#F4F2EC] relative overflow-hidden">
         {/* Elementos decorativos sutis */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#8FAE7A]/5 blur-2xl" />
@@ -310,7 +310,7 @@ export default function QuemSomos() {
                 Nossa Estrutura
               </span>
             </div>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-tight text-[#5F6F52] mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-serif leading-tight text-[#5F6F52] mb-6">
               Excelência <br />
               <span className="text-[#8FAE7A]">Operacional</span>
             </h2>
@@ -378,7 +378,7 @@ export default function QuemSomos() {
       </section>
 
       {/* IMPACTO SOCIAL (Apresentação, pág. 17) */}
-      <section className="py-32 px-6 text-center bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] text-white relative overflow-hidden">
+      <section className="py-16 md:py-32 px-4 md:px-6 text-center bg-gradient-to-br from-[#5F6F52] via-[#4A5D42] to-[#5F6F52] text-white relative overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/5 to-transparent" />
@@ -396,7 +396,7 @@ export default function QuemSomos() {
               </span>
             </div>
 
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-serif leading-tight">
               Transformando a <br />
               <span className="text-[#8FAE7A]">Indústria da Moda</span>
             </h2>

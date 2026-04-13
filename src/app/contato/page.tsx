@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ContatoPage() {
   return (
-    <main className="min-h-screen bg-[#F4F2EC] py-24 px-6 font-sans text-[#5F6F52]">
+    <main className="min-h-screen bg-[#F4F2EC] py-16 md:py-24 px-4 md:px-6 font-sans text-[#5F6F52]">
       {/* Definição da Animação */}
       <style jsx global>{`
         @keyframes fadeInUp {
@@ -28,7 +28,7 @@ export default function ContatoPage() {
         {/* CABEÇALHO - Animação Inicial (Apresentação, pág. 19) */}
         <div className="text-center mb-20 space-y-4 animate-cascade" style={{ animationDelay: '0.1s' }}>
           <span className="text-[#8FAE7A] uppercase tracking-[0.4em] text-xs font-bold">Get in Touch</span>
-          <h1 className="font-serif text-6xl md:text-8xl text-[#5F6F52]">Fale conosco</h1>
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl text-[#5F6F52]">Fale conosco</h1>
           <p className="text-[#7A5C3E] text-lg md:text-xl italic font-medium">
             "Onde moda encontra propósito." 
           </p>
@@ -91,7 +91,7 @@ export default function ContatoPage() {
 
           {/* COLUNA DO FORMULÁRIO - Delay 0.9s */}
           <div 
-            className="animate-cascade bg-white p-10 md:p-14 rounded-[3.5rem] shadow-2xl shadow-[#5F6F52]/10 border border-[#5F6F52]/5"
+            className="animate-cascade bg-white p-6 md:p-10 lg:p-14 rounded-[2rem] md:rounded-[3.5rem] shadow-2xl shadow-[#5F6F52]/10 border border-[#5F6F52]/5"
             style={{ animationDelay: '0.9s' }}
           >
             <h3 className="font-serif text-3xl mb-8 text-[#5F6F52]">Envie sua mensagem</h3>
